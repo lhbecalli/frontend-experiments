@@ -1,3 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+     list-style-type: none;
+}
+
+
+body{
+    background-color: black;
+    color: aliceblue;
+    font-size: 16px;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -7,13 +21,16 @@ header{
     width: 90vw;
     align-items: center;
     z-index: 3;
-    
+
 }
+
 
 
 
 header nav ul{
     display: flex;
     gap: 20px;
-    list-style-type: none;
 }
+
+
+
