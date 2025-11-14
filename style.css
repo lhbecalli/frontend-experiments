@@ -1,0 +1,19 @@
+header{
+    position: fixed;
+    top: 0;
+    padding: 10px 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    align-items: center;
+    z-index: 3;
+    
+}
+
+
+
+header nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
