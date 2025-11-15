@@ -85,6 +85,7 @@ background: radial-gradient(circle, rgb(201, 209, 204) 0%, rgb(233, 179, 148) 10
     
     /* iNset vai colocar todos de uma vez como 0, top, botton left e right */
     inset: 0;
+    opacity: 0;
 
 }
 
@@ -216,13 +217,15 @@ ul{
     width: 50px;
     height: 5px;
     border-radius: 5px;
-    background-color: black;
+    background-color: rgba(134, 113, 113, 0.712);
     transition: 0.5s;
+   
 }
 
 /* Li Ativo */
 .indicators ul li.active{
     background-color: aliceblue;
+    box-shadow: 1px 1px 10px rgb(233, 233, 233);
 }
 
 /* --- ANIMAÇÃO DO CARRO PARANDO NA LINHA --- */
@@ -257,3 +260,7 @@ ul{
 }
 
 
+.item-active{
+    z-index: 1000;
+    opacity: 1;
+}
