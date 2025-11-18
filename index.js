@@ -6,7 +6,7 @@ const indicators = document.querySelectorAll('.indicators ul li')
 const numberEl = document.querySelector('.indicators .number')
 
 
-
+//Vai guardar qual item está aparecendo.
 let active = 0;
          /* [item1, item2, item3] */
 const total = item.length
@@ -26,7 +26,7 @@ const total = item.length
         }   
         
 
-        
+        /* Se a direção for maior que 0, adiciona -1 (volta)*/
         else if(direction < 0){
             active = active - 1
             if(active < 0){
@@ -46,7 +46,7 @@ const total = item.length
 
 nextButton.addEventListener('click',()=>{
 
-    // Vai para frente
+    // Vai para frente e cai no if > 0
     // direction > 1
     update(1)
 
@@ -56,6 +56,6 @@ nextButton.addEventListener('click',()=>{
 
 prevButton.addEventListener('click',()=>{
     
-    // Vai para trás
+    // Vai para trás e cai no if < 0
     update(-1)
 })
